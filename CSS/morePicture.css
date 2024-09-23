@@ -1,0 +1,120 @@
+*{
+ padding: 0;
+ margin: 0;
+ box-sizing: border-box;
+ font-family: 'roboto', sans-serif;
+}
+
+
+
+.more-picture-container {
+ top: 5vh;
+ left: 50%;
+ width: 100%;
+ display: flex;
+ align-items: center;
+ position: absolute;
+ justify-content: center;
+ flex-direction: column;
+ transform: translateX(-50%);
+}
+
+.more-picture-container .single-picture{
+ width: 80%;
+ display: flex;
+ justify-content: center;
+}
+
+.more-picture-container .single-picture img {
+ width: 900px;
+ height: 500px;
+}
+
+.more-picture-container .picture-combiner {
+ display: flex;
+ width: 100%;
+ align-items: center;
+ justify-content:  center;
+ position: relative;
+}
+
+
+.more-picture-container .picture-combiner .imgs {
+ gap: 5rem;
+ display: flex; 
+ width: 90%;
+ transition: transform 0.5s ease-in-out;
+ overflow: hidden;
+}
+
+.more-picture-container .picture-combiner .imgs img {
+ width: 200px; 
+ height: auto;
+ cursor: pointer;
+ display: flex;
+ gap: 5rem;
+ transition: transform 0.3s ease;
+ box-shadow: 5px 3px 3px 5px rgb(255, 255, 255, 0.1);
+ border-radius: 10px;
+ background-color: #fff;
+}
+
+
+.more-picture-container .picture-combiner img:hover {
+ transform: scale(1.05);
+ box-shadow: 5px 3px 5px 5px rgb(255, 255, 255, 0.2);
+}
+
+.more-picture-container  .arrows {
+ color: #b6b5b5;
+ width: 95%;
+ top: 90%;
+ left: 50%;
+ display: flex;
+ position: absolute;
+ cursor: pointer;
+ justify-content: space-between;
+ align-items: center;
+ transform: translate(-50%, -50%);
+}
+
+.more-picture-container .arrows .material-symbols-outlined {
+ font-size: 30px;
+ transition: color 0.3s ease;
+}
+
+.more-picture-container .arrows .material-symbols-outlined:hover {
+ color: #007bff;
+}
+
+.button-go-home {
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ margin-top: 2rem;
+ cursor: pointer;
+}
+
+.button-go-home a{
+ font-size: 18px;
+ color: #fff;
+ padding: 10px 20px;
+ border-radius: 5px;
+ text-decoration: none;
+ background-color: rgb(18, 247, 255);
+ transition: background-color 0.3s ease;
+ cursor: pointer;
+ box-shadow: 2px 2px 5px 2px rgba(0, 0, 0, 0.1);
+ text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+ border: none;
+ font-weight: bold;
+ letter-spacing: 2px;
+ box-sizing: border-box;
+ text-transform: uppercase;
+ font-family: 'Roboto', sans-serif;
+ z-index: 1;
+}
+
+.button-go-home a:hover {
+ background-color: rgb(33, 194, 191);
+}
